@@ -26,7 +26,7 @@ RocketMQ采用顺序消费，因为键鼠消息是严格有序的，不可以玩
 
 为什么不用组内广播？即把所有订阅同一主题Slave的消费者放在一个Group里面？这样做当然可以，但是这种组内广播有一个缺陷：不具备失败重试机制，如果消息消费失败，不会重新投递，而用组间广播每个组是独立的，组内仍然是采用集群模式，所以具备重试机制。当然代价是组变得很多。
 
-![image](\.assets\1681228913047.png)
+![image]([\.assets\1681228913047.png](https://github.com/JoivanJostar/IvanSynchronizer/blob/master/assets/1681228913047.png))
 
 
 
